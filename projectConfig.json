@@ -1,0 +1,25 @@
+{
+  "blocks": {
+  },
+  "addSass": [
+    "src/sass/helpers.scss",
+    "src/sass/functions.scss",
+    "src/sass/mixins.scss",
+    "src/sass/base.scss",
+    "src/sass/elements.scss",
+    "src/sass/plugins.scss",
+    "src/sass/pages.scss"
+  ],
+  "addJsBefore": [
+    "src/js/jquery.js"
+  ],
+  "addJsAfter": [
+    "src/js/uikit.js",
+    "src/js/main.js"
+  ],
+  "dirs": {
+    "srcPath": "src/",
+    "buildPath": "dist/",
+    "blocksDirName": "blocks"
+  }
+}

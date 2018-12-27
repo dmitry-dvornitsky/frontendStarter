@@ -1,0 +1,60 @@
+// Базовые цвета https://colorscheme.ru/color-converter.html
+
+$yellow:                      #f8c504;
+$orange:                      #fcbb0d;
+$purple:                      #5b38d5;
+$purple-dark:                 #250d41;
+$brown:                       #3a2f0e;
+$gray:                        #d0c8ca;
+$black:                       #181718;
+$white:                       #ffffff;
+
+$color-primary:               $yellow;
+$color-secondary:             $purple;
+
+/* Градиенты */
+
+$gradient-main:               linear-gradient(42deg, #5038d5 0%, #8938d5 100%);
+
+// Базовая типографика
+
+/* Fonts */
+
+$font-family:                'Encode Sans Expanded', sans-serif;
+$font-family_icons:                'FontAwesome';
+
+$font-weight_thin:           100;
+$font-weight_light:          300;
+$font-weight_regular:        400;
+$font-weight_medium:         500;
+$font-weight_semibold:       600;
+$font-weight_bold:           700;
+$font-weight_extra-bold:     800;
+
+$font-size_root:             16px;
+
+$font-size:                   1rem; // rem(16px)
+
+$font-size_h1:               rem(48px);
+$font-size_h2:               rem(32px);
+$font-size_h3:               rem(24px);
+$font-size_h4:               rem(18px);
+$font-size_h5:               rem(16px);
+$font-size_h6:               rem(16px);
+
+$line-height:                2;
+
+// Ширины
+
+$screen-xs:                   0;
+$screen-sm:                   480px;
+$screen-md:                   768px;
+$screen-lg:                   992px;
+$screen-xl:                   1200px;
+$screen-xxl:                  1800px;
+
+// Разное
+
+$transition-fast:             all ease 0.4s;
+$transition-slow:             all ease 0.8s;
+

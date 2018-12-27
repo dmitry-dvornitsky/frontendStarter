@@ -1,0 +1,75 @@
+// Имя:             Container
+// Описание:        Компонент для выравнивания сайта по центру
+//
+// Компонент:       `container`
+//
+// Модификаторы:    `container_small`
+//                  `container_large`
+//                  `container_expand`
+//
+// ========================================================================
+
+
+// Переменные
+// ========================================================================
+
+$container-max-width:                    1170px !default;
+$container-small-max-width:              900px !default;
+$container-large-max-width:              1600px !default;
+
+$container-padding-horizontal:           15px !default;
+$container-padding-horizontal-s:         30px !default;
+$container-padding-horizontal-m:         40px !default;
+
+
+/* ========================================================================
+   Компонент: Container
+ ========================================================================== */
+
+/*
+ * 1. Box-sizing должен быть 'content-box', благодаря этому максимальная ширина всегда одинакова и
+ *    не зависит от padding на разных экранах. Это важно для модификаторов.
+ */
+
+.container {
+  position: relative;
+  box-sizing: content-box; /* 1 */
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-padding-horizontal;
+  padding-right: $container-padding-horizontal;
+
+  /* Удаление padding у вложенного container */
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Телефон в горизонтальном положение и шире */
+  @media (min-width: $screen-md) {
+    padding-left: $container-padding-horizontal-s;
+    padding-right: $container-padding-horizontal-s;
+  }
+
+  /* Планшет в горизонтальном положение и шире */
+  @media (min-width: $screen-xl) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Модификаторы
+ ========================================================================== */
+
+  &_small {
+    max-width: $container-small-max-width;
+  }
+
+  &_large {
+    max-width: $container-large-max-width;
+  }
+
+  &_expand {
+    max-width: none;
+  }
+}

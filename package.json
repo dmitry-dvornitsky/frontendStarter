@@ -1,0 +1,38 @@
+{
+  "name": "frontend-starter",
+  "version": "1.0.0",
+  "description": "Frontend starter kit",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "lint-staged": {
+    "*.js": "editorconfig-cli",
+    "*.pug": "editorconfig-cli",
+    "*.css": "stylelint",
+    "*.scss": "stylelint --syntax=scss"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.0.0",
+    "browser-sync": "^2.23.6",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-newer": "^1.4.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-pug-lint": "^0.1.6",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "lint-staged": "^7.0.0",
+    "stylelint": "^9.1.1"
+  },
+  "scripts": {
+    "test:style": "stylelint \"src/**/*.scss\" --syntax=scss",
+    "lint-staged": "lint-staged",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "frontend"
+  ],
+  "author": "Dima Dvornitskiy",
+  "license": "ISC"
+}
